@@ -12,7 +12,7 @@
     <div class="flex flex-col gap-8 p-8 md:mt-24 md:w-1/2">
         <h1 class="text-4xl font-extrabold text-balance">Stacjonarna szkoła dla młodych małżeństw w Krakowie</h1>
         <p class="text-balance">Tworzymy katechumenat dla małżeństw przygotowujący do sakramentalnego spotkania się z Jezusem Chrystusem we wspólnocie małżeńskiej.</p>
-        <button class="bg-[#BC5A5A] w-fit text-center mx-auto px-14 py-4 rounded-full text-white shadow-xl hover:opacity-90 transition-opacity duration-150">Zapisz się!</button>
+        <a class="bg-[#BC5A5A] w-fit text-center mx-auto px-14 py-4 rounded-full text-white shadow-xl hover:opacity-90 transition-opacity duration-150" href="#apply">Zapisz się!</a>
     </div>
     <div class="flex items-center md:w-1/2 justify-normal">
         <img src="{{ asset('images/copule.png') }}" class="w-full max-w-xs sm:w-auto sm:h-auto sm:max-w-none" alt="Przytulająca się para">

@@ -39,6 +39,9 @@
             </div>
 
         </div>
+        <div class="flex items-center justify-center md:justify-end">
+            <div class="g-recaptcha" data-sitekey="{{ env('NOCAPTCHA_SITEKEY') }}"></div>
+        </div>
         <div class="flex p-4">
             <button type="submit" class="w-2/4 px-4 py-4 mx-auto text-xl font-semibold text-center text-black transition-opacity duration-150 bg-white rounded-full hover:opacity-80">Wyślij</button>
         </div>
