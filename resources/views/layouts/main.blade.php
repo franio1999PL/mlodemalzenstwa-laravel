@@ -16,6 +16,10 @@
     <script defer data-domain="mlodemalzenstwa.pl" src="https://analytics.overhost.pl/js/script.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .custom-number-input {
             -moz-appearance: textfield;
         }
@@ -61,6 +65,7 @@
         <main class="w-full mx-auto max-w-7xl">
             @yield('content')
         </main>
+        @include('partials.footer')
     </div>
 </body>
 </html>

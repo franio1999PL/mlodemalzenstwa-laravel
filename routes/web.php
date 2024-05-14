@@ -16,15 +16,6 @@ use App\Http\Controllers\ApplicationController;
 |
 */
 
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
-
 Route::get("/", function () {
     return view("homepage", [
         "canLogin" => Route::has("login"),
