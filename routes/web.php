@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ApplicationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +31,9 @@ Route::get("/", function () {
         "canRegister" => Route::has("register")
     ]);
 })->name("homepage");
+
+Route::post('/application', [ApplicationController::class, 'store'])->name('application');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

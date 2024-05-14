@@ -15,6 +15,45 @@
     @vite('resources/css/app.css')
     <script defer data-domain="mlodemalzenstwa.pl" src="https://analytics.overhost.pl/js/script.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .custom-number-input {
+            -moz-appearance: textfield;
+        }
+
+        .custom-number-input::-webkit-outer-spin-button,
+        .custom-number-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .custom-number-input-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .custom-number-input::after {
+            content: "\25B2";
+            /* Unicode dla strzałki w górę */
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .custom-number-input::before {
+            content: "\25BC";
+            /* Unicode dla strzałki w dół */
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            cursor: pointer;
+            color: white;
+        }
+
+    </style>
 </head>
 <body class="antialiased">
     <div class="relative min-h-screen bg-[#FEF4EA] ">
