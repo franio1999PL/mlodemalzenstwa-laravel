@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="flex flex-col items-center md:items-start">
-            <p class="text-lg hover:underline">Kontakt: <a href="mailto:apostolstwo@szansaspotkania.pl">apostolstwo@szansaspotkania.pl</a></p>
+            <p class="text-lg">Kontakt: <a href="mailto:apostolstwo@szansaspotkania.pl" class="hover:underline">apostolstwo@szansaspotkania.pl</a></p>
             <p class="text-lg">Copyright © <span>{{ date("Y") }}</span> młodemałżeństwa.pl</p>
         </div>
         <div class="flex justify-center gap-4 md:justify-start">

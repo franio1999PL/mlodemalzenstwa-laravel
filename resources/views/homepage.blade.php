@@ -15,8 +15,7 @@
         <a class="bg-[#BC5A5A] w-fit text-center mx-auto px-14 py-4 rounded-full text-white shadow-xl hover:opacity-90 transition-opacity duration-150" href="#apply">Zapisz się!</a>
     </div>
     <div class="flex items-center md:w-1/2 justify-normal">
-        <img src="{{ asset('images/copule.png') }}" class="w-full max-w-xs sm:w-auto sm:h-auto sm:max-w-none" alt="Przytulająca się para">
-
+        <img src="{{ asset('images/copule.png') }}" class="w-full max-w-xs sm:w-auto sm:h-auto sm:max-w-none" alt="Przytulająca się para" loading="lazy">
     </div>
 </section>
 <section class="flex flex-col justify-around w-full gap-8 mb-16 md:m-4 md:gap-0 md:flex-row">
@@ -35,7 +34,7 @@
 </section>
 <section class="flex flex-col items-center justify-center w-full mt-16 md:items-start md:mt-36 md:flex-row">
     <div class="flex items-center md:w-1/2 justify-normal">
-        <img src="{{ asset('images/thinking.png') }}" alt="Zastanawiająca się para" class="w-full max-w-xs sm:w-auto sm:h-auto sm:max-w-none">
+        <img src="{{ asset('images/thinking.png') }}" alt="Zastanawiająca się para" class="w-full max-w-xs sm:w-auto sm:h-auto sm:max-w-none" loading="lazy">
     </div>
     <div class="flex flex-col gap-8 p-8 md:mt-24 md:w-1/2">
         <h1 class="text-4xl font-extrabold text-balance">O Szkole Młodych Małżeństw</h1>
