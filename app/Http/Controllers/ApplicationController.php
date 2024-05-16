@@ -12,7 +12,7 @@ class ApplicationController extends Controller
     {
         // Walidacja danych
         $validated = $request->validate([
-            // 'g-recaptcha-response' => 'required|captcha',
+            'g-recaptcha-response' => 'required|captcha',
             'wife_name' => 'required|string|max:255',
             'husband_name' => 'required|string|max:255',
             'age' => 'required|integer|min:0|max:80',

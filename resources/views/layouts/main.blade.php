@@ -6,6 +6,24 @@
     {{-- add favicon --}}
     <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
 
+    <meta name="description" content="Szkoła dla młodych małżeństw w Krakowie, przygotowująca do sakramentalnego życia w Chrystusie. Zapisz się i weź udział w naszych zajęciach!">
+    <meta name="keywords" content="młode małżeństwa, szkoła małżeństw, katechumenat, Kraków, sakrament, chrześcijaństwo, wspólnota małżeńska">
+    <meta name="author" content="Młode Małżeństwa">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Szkoła Młodych Małżeństw w Krakowie - Młode Małżeństwa">
+    <meta property="og:description" content="Szkoła dla młodych małżeństw w Krakowie, przygotowująca do sakramentalnego życia w Chrystusie. Zapisz się i weź udział w naszych zajęciach!">
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
+    <meta property="og:url" content="https://mlodemalzenstwa.pl">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Szkoła Młodych Małżeństw w Krakowie - Młode Małżeństwa">
+    <meta name="twitter:description" content="Szkoła dla młodych małżeństw w Krakowie, przygotowująca do sakramentalnego życia w Chrystusie. Zapisz się i weź udział w naszych zajęciach!">
+    <meta name="twitter:image" content="{{ asset('images/logo.png') }}">
+
     <title> @yield('title', 'Młode Małżeństwa') </title>
 
     <!-- Fonts -->

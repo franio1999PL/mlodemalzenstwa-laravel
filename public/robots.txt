@@ -1,2 +1,36 @@
 User-agent: *
-Disallow:
+Disallow: /dashboard
+Disallow: /register
+Disallow: /login
+Disallow: /profile
+Disallow: /forgot-password
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: AlphaBot
+Disallow: /
+
+Sitemap: https://mlodemalzenstwa.pl/sitemap.xml
+

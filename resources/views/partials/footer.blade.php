@@ -22,9 +22,6 @@
             <h3 class="text-2xl font-bold">Menu</h3>
             <ul class="flex flex-col gap-2">
                 <li>
-                    <a class="hover:underline" href="#">Kontakt</a>
-                </li>
-                <li>
                     <a href="{{ route('faq') }}" class="hover:underline">FAQ</a>
                 </li>
                 <li>
