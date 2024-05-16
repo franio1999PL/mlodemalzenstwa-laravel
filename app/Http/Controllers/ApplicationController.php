@@ -42,4 +42,5 @@ class ApplicationController extends Controller
         return redirect()->back()->with('success', 'Formularz został pomyślnie wysłany.');
     }
 
+
 }

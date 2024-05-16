@@ -8,6 +8,18 @@ export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] =
         useState(false);
 
+    // if (!user.email_verified_at) {
+    //     return (
+    //         <div>
+    //             Twoje konto nie jest zweryfikowane. Sprawdź swoją skrzynkę email
+    //             i potwierdź adres.
+    //             <a href={route("verification.notice")}>
+    //                 Kliknij tutaj, aby ponownie wysłać link weryfikacyjny
+    //             </a>
+    //         </div>
+    //     );
+    // }
+
     return (
         <div className="min-h-screen bg-gray-100">
             <nav className="bg-white border-b border-gray-100">
@@ -25,7 +37,7 @@ export default function Authenticated({ user, header, children }) {
                                     href={route("dashboard")}
                                     active={route().current("dashboard")}
                                 >
-                                    Dashboard
+                                    Zgłoszenia
                                 </NavLink>
                             </div>
                         </div>
@@ -61,14 +73,14 @@ export default function Authenticated({ user, header, children }) {
                                         <Dropdown.Link
                                             href={route("profile.edit")}
                                         >
-                                            Profile
+                                            Profil Użytkownika
                                         </Dropdown.Link>
                                         <Dropdown.Link
                                             href={route("logout")}
                                             method="post"
                                             as="button"
                                         >
-                                            Log Out
+                                            Wyloguj
                                         </Dropdown.Link>
                                     </Dropdown.Content>
                                 </Dropdown>
@@ -129,7 +141,7 @@ export default function Authenticated({ user, header, children }) {
                             href={route("dashboard")}
                             active={route().current("dashboard")}
                         >
-                            Dashboard
+                            Zgłoszenia
                         </ResponsiveNavLink>
                     </div>
 
@@ -145,14 +157,14 @@ export default function Authenticated({ user, header, children }) {
 
                         <div className="mt-3 space-y-1">
                             <ResponsiveNavLink href={route("profile.edit")}>
-                                Profile
+                                Profil Użytkownika
                             </ResponsiveNavLink>
                             <ResponsiveNavLink
                                 method="post"
                                 href={route("logout")}
                                 as="button"
                             >
-                                Log Out
+                                Wyloguj
                             </ResponsiveNavLink>
                         </div>
                     </div>

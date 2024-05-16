@@ -15,8 +15,10 @@
         </button>
         <nav x-bind:class="! open ? 'hidden md:block' : 'md:block'">
             <ul class="flex flex-col items-center justify-center gap-6 p-4 text-lg md:flex-row items font-semithin">
-                <li class="hover:cursor-pointer">O szkole</li>
-                <li class="hover:cursor-pointer">FAQ</li>
+                <li>
+                    <a href="{{ route('about') }}" class="hover:cursor-pointer hover:underline">O szkole</a>
+                </li>
+                <li><a href="{{ route('faq') }}" class="hover:cursor-pointer hover:underline">FAQ</a></li>
                 <a class="px-6 py-4 border-black rounded-full border-[1px] hover:cursor-pointer hover:bg-[#BC5A5A] hover:border-black/50 hover:text-white transition-colors duration-150" href="#apply">Zapisz się</a>
             </ul>
         </nav>

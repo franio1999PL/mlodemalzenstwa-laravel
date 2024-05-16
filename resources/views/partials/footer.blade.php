@@ -25,10 +25,10 @@
                     <a class="hover:underline" href="#">Kontakt</a>
                 </li>
                 <li>
-                    <a class="hover:underline" href="#">FAQ</a>
+                    <a href="{{ route('faq') }}" class="hover:underline">FAQ</a>
                 </li>
                 <li>
-                    <a class="hover:underline" href="#">O szkole</a>
+                    <a class="hover:underline" href="{{ route('about') }}">O szkole</a>
                 </li>
             </ul>
         </div>
